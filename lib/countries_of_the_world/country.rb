@@ -1,5 +1,5 @@
 class CountriesOfTheWorld::Country
-attr_accessor :name, :region, :income_level, :population, :gdp, :gdp_growth, :description
+attr_accessor :name, :population, :gdp, :gdp_growth, :description, :region, :income_level
 @@all =[]
 
 def initialize(name)
