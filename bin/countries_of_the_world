@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "countries_of_the_world"
+
+CountriesOfTheWorld::CLI.new.call
