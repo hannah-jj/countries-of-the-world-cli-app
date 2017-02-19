@@ -6,12 +6,12 @@ require 'countries_of_the_world/version'
 Gem::Specification.new do |spec|
   spec.name          = "countries_of_the_world"
   spec.version       = CountriesOfTheWorld::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
+  spec.authors       = ["Hannah Jiang"]
+  spec.email         = ["hui1021@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "To provide basic information on each country of the world"
+  spec.description   = "To provide basic information such as region, population, GDP etc. for each country found in worldbank database"
+  spec.homepage      = "https://github.com/hannah11361/countries-of-the-world-cli-app"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -33,4 +33,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_dependency "nokogiri"
+  spec.add_dependency "colorize"
+  spec.add_development_dependency "pry"
 end
