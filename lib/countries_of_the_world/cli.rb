@@ -7,7 +7,8 @@ def call
 	input = keep_going
 	
 	while input.downcase != "exit"
-		if input.to_i > 0 #is a number 
+		if input.to_i > 0 && input.to_i <= CountriesOfTheWorld::Country.all.size
+		#if input is a number 
 			display_detail(scraper, input.to_i-1)
 
 			puts "Would you like to view another country? Y/N"
